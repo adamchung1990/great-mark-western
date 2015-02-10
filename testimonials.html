@@ -1,0 +1,146 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Great Mark Western</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+<!-- CUSTOM FONTS -->
+<script src="//use.typekit.net/hac5ytw.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" language="javascript" src="js/stellar.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ 
+<body> 
+
+<div class="container">
+
+	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+		</ul>
+		<a href="index.html"><img id="nav-logo" src="images/GMW-logo-small.png" /></a>
+	</header>
+	<div class="nav-center">
+		<div id="nav-background2"></div>
+		<nav class="slide">
+			<ul>
+				<li><a href="index.html">OUR STORY</a></li>
+				<li><a href="raisingcattle.html">RAISING CATTLE</a></li>
+				<li id="logo-small">
+					<a href="index.html"><img src="images/GMW-logo-small.png"/></a>
+				</li>
+				<li><a class="current" data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background">TESTIMONIALS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="content slide">
+		<ul class="responsive">
+			<li style="padding-top: 56px;">
+				<section class="banner" id="testimonial-banner" data-stellar-background-ratio="0.5">
+				<article>
+					<p class="banner-title" id="raising-quality">Raising the Quality Bar</p>
+					<p id="raising-quality-subtitle">No matter the grade or cut. Great Mark Western beef finishes first in every blind tasting. It consistently beats every other brand on flavor and tenderness. Here’s what the culinary world is saying about out product.</p>
+				</article>
+				</section>
+			</li>
+			<li class="main-copy">
+				<p class="title"><span id="title-highlight">TESTIMONIALS</span></p>
+				<p>
+				What people are saying about Great Mark Western
+				</p>
+				<img id="stars-icon" src="images/stars.png"/>
+
+				<div class="testimonial">
+					<img id="bio-photo" src="images/jean.png" />
+					<div class="horizontal-layout">
+						<p id="bio-name">Jean Schweihofer</p>
+						<p id="bio-grey-text">Surpassing tenderness expectations:</p>
+						<p id="bio-dark-text">“Great Mark Western to rib eye achieved the highest tenderness scores we’ve ever seen at Michigan State.”</p>
+						<p id="bio-grey-text">– Jean Schweihofer, PhD, Meat Quality Educator, MSU Extension</p>
+					</div>
+				</div>
+				<div class="testimonial">
+					<img id="bio-photo" src="images/chuck.png" />
+					<div class="horizontal-layout">
+						<p id="bio-name">Chuck Sansone</p>
+						<p id="bio-grey-text">On consistency from plate to plate:</p>
+						<p id="bio-dark-text">“Great Mark Western is the only beef I’ve ever used with the highest quality from harvest to harvest."</p>
+						<p id="bio-grey-text">– Chuck Sansone, Executive Chef, Continental Café</p>
+					</div>
+				</div>
+				<div class="testimonial" id="bottom-testimonial">
+					<img id="bio-photo" src="images/chris.png" />
+					<div class="horizontal-layout">
+						<p id="bio-name">Chris Antoniotti</p>
+						<p id="bio-grey-text">About premium taste:</p>
+						<p id="bio-dark-text">“In my career, I’ve tasted a lot of beef. The best New York strip I’ve ever had is Great Mark Western. It’s perfectly trimmed and fork-tender. Every cut, from strip to filet to rib eye is premium in my opinion.” </p>
+						<p id="bio-grey-text">– Chris Antoniotti, Regional Executive Chef, Continental Services</p>
+					</div>
+				</div>
+
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+	
+<!-- Smooth Scroll Javascript -->
+	
+	<script src='js/smooth-scroll.js'></script>
+	<script>
+		smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: true,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+	</script>
+
+
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	$(window).stellar();
+	    	document.getElementById('activelink').focus();
+	    });
+	 
+	 
+	</script>
+
+
+</body> 
+</html>
+
+
+
+
+
+
+

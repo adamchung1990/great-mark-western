@@ -1,0 +1,180 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head> 
+
+<title>Great Mark Western</title> 
+
+<meta charset="utf-8">
+<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="HandheldFriendly" content="True">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+<!-- Style Sheets --> 
+<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
+<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+
+<!-- CUSTOM FONTS -->
+<script src="//use.typekit.net/hac5ytw.js"></script>
+<script>try{Typekit.load();}catch(e){}</script>
+
+<!-- Scripts --> 
+<script type="text/javascript">
+	if (typeof jQuery == 'undefined')
+		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" + 
+															"type='text/javascript'%3E%3C/script%3E"))
+</script>
+<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+<script type="text/javascript" language="javascript" src="js/stellar.js"></script>
+<!--[if lt IE 9]>
+<script src="js/html5shiv.js"></script>
+<![endif]-->
+
+
+</head> 
+ 
+<body> 
+
+<div class="container">
+
+	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
+			<li></li><li></li><li></li>
+		</ul>
+		<a data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background"><img id="nav-logo" src="images/GMW-logo-small.png" /></a>
+	</header>
+	<div class="nav-center">
+		<div id="nav-background"></div>
+		<nav class="slide">
+			<ul>
+				<li><a class="current" data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background">OUR STORY</a></li>
+				<li><a href="raisingcattle.html">RAISING CATTLE</a></li>
+				<li id="logo-small"><a data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background">
+				<img src="images/GMW-logo-small.png"/>
+				</a></li>
+				<li><a href="testimonials.html">TESTIMONIALS</a></li>
+				<li><a href="contact.html">CONTACT</a></li>
+			</ul>
+		</nav>
+	</div>
+	
+	<div class="content slide">
+		<ul class="responsive">
+			<li id="header-size">
+				<section class="header" data-stellar-background-ratio="0.5">
+					<article style="height:100%">
+					<div id="logo-space-top"></div>
+					<img id="logo" src="images/GMW-logo.png"/>
+					<div id="logo-space-bottom"></div>
+					<a class="bounce" data-scroll data-options='{ "easing": "easeInQuad" }' href="#arrow">
+						<p id="learn-more">LEARN MORE!</p>
+						<img id="arrow" src="images/arrow.png"/>
+					</a>
+					</article>
+				</section>
+			</li>
+			<li data-scroll id="intro-copy" id="shadow">
+				<section class="main-copy" >
+					<article>
+					<img id="meat-icon" src="images/meat-icon.png"/>
+					<p> Like your fine dining establishment, the culinary team at <span id="copy-highlight">Continental Café</span> is challenged daily to satisfy the discriminating tastes of a variety of customers and guests. And like you, each of our chefs need to be confident he or she is serving <span id="copy-highlight">superior ingredients</span> for the fare they prepare.
+					</p>
+					<p>
+					<span id="copy-highlight">Great Mark Western</span> started four years ago with a specific result in mind: bringing <span id="copy-highlight">consistently tender</span> and <span id="copy-highlight">flavorful beef</span> to the plate. Today they are seeing and tasting a difference.
+					</p>
+					<img id="stars-icon" src="images/stars.png"/>
+					</article>
+				</section>
+			</li>
+			<li>
+				<section class="banner" data-stellar-background-ratio="0.5">
+				<article>
+					<p class="banner-title"><span id="banner-highlight">Why</span> Great Mark Western?</p>
+					<p class="banner-subtitle">The Story Behind Our Brand</p>
+				</article>
+				</section>
+			</li>
+			<li class="main-copy">
+				<p class="title">USDA BRED & FED <span id="title-highlight">PREMIUM RESERVE</span></p>
+				<img id="stars-icon" src="images/stars.png"/>
+				<img id="USDA-icon" src="images/USDA.png"/>
+				<p>
+				In the quest to prepare and serve its guests only the most memorable dishes, Continental Café and its culinary group determined it needed to do more, and challenged its team to answer the question <span id="copy-highlight">“what makes better beef?”</span> And that’s why Great Mark Western (GMW) was born.
+				</p>
+				<p>
+				GMW is built on a deep heritage of nearly <span id="copy-highlight">three decades of expertise</span> in the <span id="copy-highlight">food service</span> industry, the experience of <span id="copy-highlight">veteran cattle ranchers</span> and the <span id="copy-highlight">traceable linage</span> of the Angus beef cattle behind its brand.”
+				</p>
+				<p>
+				Our <span id="copy-highlight">herds are handpicked</span> with specific characteristics for tenderness, marbling and rib eye during procurement. According to our curators, great genes start the process, but maintaining cattle with <span id="copy-highlight">proper care</span>, a nutrient-rich diet and harvesting at an optimal age <span id="copy-highlight">guarantees flavor and tenderness</span>.
+				</p>
+				<p>
+				Great Mark Western’s premium reserve Angus is quite simply remarkable. And we’re quite sure you will agree. 
+				</p>
+				<img id="stars-icon" src="images/stars.png"/>
+			</li>
+		</ul>
+	</div>
+	
+</div>
+
+	
+<!-- Smooth Scroll Javascript -->
+	
+	<script src='js/smooth-scroll.js'></script>
+	<script>
+		smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: true,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+	</script>
+
+	<script type="text/javascript">
+ 
+	(function($) {
+	    $(document).ready(function(){
+	 		
+	    	$(window).stellar();
+	 		
+	        $(window).scroll(function(){
+	            if ($(this).scrollTop() > 200) {
+	                $('#nav-background').fadeIn(600);
+	            } else {
+	                $('#nav-background').fadeOut(600);
+	            }
+	        });
+
+	        $(window).scroll(function(){
+	            if ($(this).scrollTop() < 200) {
+	                $('.bounce').fadeIn(600);
+	            } else {
+	                $('.bounce').fadeOut(600);
+	            }
+	        });
+	 
+	    });
+	})(jQuery);
+	 
+	</script>
+
+	<script type="text/javascript">
+	    $(document).ready(function(){
+	    	document.getElementById('activelink').focus();
+	    });
+	 
+	 
+	</script>
+
+
+</body> 
+</html>
+
+
+
+
+
+
+
