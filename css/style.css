@@ -218,6 +218,8 @@ input:focus, textarea:focus {
 	margin-top: 12px;
 }
 
+.verif_img {margin-top:10px;}
+
 /* MOBILE NAV */
 
 header {
@@ -265,31 +267,29 @@ nav li a {
 /* WEB NAV */
 
 #logo-small {margin: 6px;display:none;}
+#logo-small img {width:160px;}
 
-.nav-center {
+.nav-container {
+	top: 13px;
 	width: 100%;
 	height: 0px;
 	display: block;
 	margin: 0 auto;
 	position: fixed;
+	transition: .6s;
+	-o-transition: .6s;
+	-ms-transition: .6s;
+	-moz-transition: .6s;
+	-webkit-transition: .6s;
 }
 
-#nav-background {
+.nav-active {
+	top: -10px;
 	height:79px;
 	width:100%;
 	background-color: black;
 	border-bottom: solid 4px #985a28;
-	box-shadow: 0px -4px 42px #000;
-	position:fixed;
-	display:none;
-}
-
-#nav-background2 {
-	height:79px;
-	width:100%;
-	background-color: black;
-	border-bottom: solid 4px #985a28;
-	box-shadow: 0px -4px 42px #000;
+	box-shadow: 0px -4px 25px #000;
 	position:fixed;
 }
 
@@ -330,6 +330,10 @@ nav li a {
   -moz-animation: bounce 1.5s infinite;
   animation: bounce 1.5s infinite;
 }
+
+.bounce p {transition:.3s;}
+
+.bounce img {transition:.3s;}
 
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
@@ -419,7 +423,7 @@ nav li a {
 
 #USDA-icon {height:130px;}
 
-
+.hide {opacity:0;}
 
 
 
@@ -458,7 +462,12 @@ nav li a {
 	#logo-space-bottom {height:2%;}
 	#logo {width: 40%; max-width: 335px;}
 
-	nav {width: 759px;}
+
+
+	nav {
+		width: 759px;
+		top:5px;
+	}
 
 	nav li a {
 		font-size:16px; 

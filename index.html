@@ -43,8 +43,7 @@
 		</ul>
 		<a data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background"><img id="nav-logo" src="images/GMW-logo-small.png" /></a>
 	</header>
-	<div class="nav-center">
-		<div id="nav-background"></div>
+	<div class="nav-container">
 		<nav class="slide">
 			<ul>
 				<li><a class="current" data-scroll data-options='{ "easing": "easeInQuad" }' href="#nav-background">OUR STORY</a></li>
@@ -53,7 +52,7 @@
 				<img src="images/GMW-logo-small.png"/>
 				</a></li>
 				<li><a href="testimonials.html">TESTIMONIALS</a></li>
-				<li><a href="contact.html">CONTACT</a></li>
+				<li><a href="contact.php">CONTACT</a></li>
 			</ul>
 		</nav>
 	</div>
@@ -138,20 +137,23 @@
 	    $(document).ready(function(){
 	 		
 	    	$(window).stellar();
-	 		
+			 
 	        $(window).scroll(function(){
-	            if ($(this).scrollTop() > 200) {
-	                $('#nav-background').fadeIn(600);
+	            if ($(this).scrollTop() > 100) {
+	                $('.nav-container').addClass('nav-active');
+
 	            } else {
-	                $('#nav-background').fadeOut(600);
+	            	$('.nav-container').removeClass('nav-active');
 	            }
 	        });
 
 	        $(window).scroll(function(){
 	            if ($(this).scrollTop() < 200) {
-	                $('.bounce').fadeIn(600);
+	                $('.bounce p').removeClass('hide');
+	                $('#arrow').removeClass('hide');
 	            } else {
-	                $('.bounce').fadeOut(600);
+	                $('.bounce p').addClass('hide');
+	                $('#arrow').addClass('hide');
 	            }
 	        });
 	 
