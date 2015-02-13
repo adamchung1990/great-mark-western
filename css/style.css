@@ -25,8 +25,6 @@ body {
 	-ms-font-smoothing: antialiased;
 }
 
-.prevent-x-scrolling {max-width:100%;overflow-x: hidden;}
-
 a {text-decoration: none;}
 
 .container {
@@ -112,7 +110,6 @@ p {
 
 #contact-image {
 	background: url('../images/contact1.jpg') 50% 0 no-repeat;
-	background-size: 140%;
 	background-color: black;
 	height: auto;
 }
@@ -134,7 +131,7 @@ p {
 	color: white;
 	width: 76%;
 	font-size: 14px;
-	padding: 38px 0;
+	padding: 45px 0 30px;
 	display: block;
 	font-family: 'adelle', serif;
 	font-weight:600;
@@ -243,7 +240,13 @@ header {
 	margin: 5px 0;
 }
 
-.burger.open li {background-color: #d9dde1;}
+.burger.open li {background-color: black;}
+.burger.open {background-color:#737373;}
+
+
+.burger:active {background-color:#737373;}
+.burger:active li {background-color: black;}
+
 
 nav {
 	position: relative;
@@ -331,9 +334,9 @@ nav li a {
   animation: bounce 1.5s infinite;
 }
 
-.bounce p {transition:.3s;}
+#learn-more {transition:.3s;}
 
-.bounce img {transition:.3s;}
+#arrow {transition:.3s;}
 
 @-webkit-keyframes bounce {
   0%       { bottom:5px; }
@@ -475,11 +478,11 @@ nav li a {
 		padding-bottom:9px;
 		border-bottom: 3px solid transparent;
 
-  		-o-transition: border-color .5s ease-in-out;
-		-ms-transition: border-color .5s ease-in-out;
-		-moz-transition: border-color .5s ease-in-out;
-		-webkit-transition: border-color .5s ease-in-out;
-		transition: border-color .5s ease-in-out;
+  		-o-transition: border-color .2s ease-in-out;
+		-ms-transition: border-color .2s ease-in-out;
+		-moz-transition: border-color .2s ease-in-out;
+		-webkit-transition: border-color .2s ease-in-out;
+		transition: border-color .2s ease-in-out;
 	}
 
 	a:hover {border-bottom-color: white;}
@@ -507,8 +510,6 @@ nav li a {
 	.horizontal-layout {display:inline-block;vertical-align:middle;width: 61%;max-width: 600px;margin-top:17px;}
 	.horizontal-layout p {text-align:left;}
 
-	/* CONTACT */
-	.contact {padding-top: 80px;}
 }
 
 
@@ -516,8 +517,8 @@ nav li a {
 
 	nav {width: 897px;}
 	nav li a {font-size: 17px;margin: 7px 18px;}
-	#header-size {height:100%;min-height: 600px;}
-	#logo {width: 34%; max-width: 393px;}
+	#header-size {height:620px}
+	#logo {max-width: 393px;}
 
 	#meat-icon {width:346px;}
 	.main-copy p {font-size:17px; padding-top:29px; width:88%; max-width:759px;}
@@ -549,8 +550,7 @@ nav li a {
 
 @media only screen and (min-width: 1200px) {
 	.header {background-size:100%;}
-	#header-size {min-height: 690px;}
-	#logo {width: 32%; max-width: 482px;}
+	#header-size {height: 690px;}
 	#logo-space-top {height:8%;}
 }
 

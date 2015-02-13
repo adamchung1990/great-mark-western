@@ -33,7 +33,7 @@
 
 </head> 
  
-<body> 
+<body ontouchstart=""> 
 
 <div class="container">
 
@@ -65,7 +65,7 @@
 					<div id="logo-space-top"></div>
 					<img id="logo" src="images/GMW-logo.png"/>
 					<div id="logo-space-bottom"></div>
-					<a class="bounce" data-scroll data-options='{ "easing": "easeInQuad" }' href="#arrow">
+					<a class="learn-more-animation" data-scroll data-options='{ "easing": "easeInQuad" }' href="#arrow">
 						<p id="learn-more">LEARN MORE!</p>
 						<img id="arrow" src="images/arrow.png"/>
 					</a>
@@ -101,7 +101,7 @@
 				In the quest to prepare and serve its guests only the most memorable dishes, Continental Café and its culinary group determined it needed to do more, and challenged its team to answer the question <span id="copy-highlight">“what makes better beef?”</span> And that’s why Great Mark Western (GMW) was born.
 				</p>
 				<p>
-				GMW is built on a deep heritage of nearly <span id="copy-highlight">three decades of expertise</span> in the <span id="copy-highlight">food service</span> industry, the experience of <span id="copy-highlight">veteran cattle ranchers</span> and the <span id="copy-highlight">traceable linage</span> of the Angus beef cattle behind its brand.”
+				GMW is built on a deep heritage of nearly <span id="copy-highlight">three decades of expertise</span> in the <span id="copy-highlight">food service</span> industry, the experience of <span id="copy-highlight">veteran cattle ranchers</span> and the <span id="copy-highlight">traceable linage</span> of the Angus beef cattle behind its brand.
 				</p>
 				<p>
 				Our <span id="copy-highlight">herds are handpicked</span> with specific characteristics for tenderness, marbling and rib eye during procurement. According to our curators, great genes start the process, but maintaining cattle with <span id="copy-highlight">proper care</span>, a nutrient-rich diet and harvesting at an optimal age <span id="copy-highlight">guarantees flavor and tenderness</span>.
@@ -132,11 +132,35 @@
 	</script>
 
 	<script type="text/javascript">
- 
+
+		var isMobile = {
+	    Android: function() {
+	        return navigator.userAgent.match(/Android/i);
+	    },
+	    BlackBerry: function() {
+	        return navigator.userAgent.match(/BlackBerry/i);
+	    },
+	    iOS: function() {
+	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	    },
+	    Opera: function() {
+	        return navigator.userAgent.match(/Opera Mini/i);
+	    },
+	    Windows: function() {
+	        return navigator.userAgent.match(/IEMobile/i);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	    }
+	};
+	jQuery(document).ready(function(){
+	    if( !isMobile.any() ){
+	        $(window).stellar();
+	    }
+	});
+
 	(function($) {
 	    $(document).ready(function(){
-	 		
-	    	$(window).stellar();
 			 
 	        $(window).scroll(function(){
 	            if ($(this).scrollTop() > 100) {
@@ -149,15 +173,33 @@
 
 	        $(window).scroll(function(){
 	            if ($(this).scrollTop() < 200) {
-	                $('.bounce p').removeClass('hide');
+	                $('#learn-more').removeClass('hide');
 	                $('#arrow').removeClass('hide');
 	            } else {
-	                $('.bounce p').addClass('hide');
+	                $('#learn-more').addClass('hide');
 	                $('#arrow').addClass('hide');
 	            }
 	        });
 	 
 	    });
+
+	})(jQuery);
+
+	(function($) {
+	    var $window = $(window),
+	        $animate = $('.learn-more-animation');
+
+	    function resize() {
+	        if ($window.width() > 514) {
+	            return $animate.addClass('bounce');
+	        }
+
+	        $animate.removeClass('bounce');
+	    }
+
+	    $window
+	        .resize(resize)
+	        .trigger('resize');
 	})(jQuery);
 	 
 	</script>

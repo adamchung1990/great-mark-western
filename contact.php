@@ -9,6 +9,7 @@
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="HandheldFriendly" content="True">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
+<meta name="format-detection" content="telephone=no">
 
 <!-- Style Sheets --> 
 <link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
@@ -33,7 +34,7 @@
 
 </head> 
  
-<body> 
+<body ontouchstart=""> 
 
 <div class="container">
 
@@ -64,7 +65,7 @@
 				<article class="contact-page">
 					<p id="contact-intro">Flavor guaranteed and consistent quality, every time. That’s the hallmark of Great Mark Western Angus beef. Taste the difference. See what Great Mark Western customers are talking about.</p>
 					<div class="contact-box">
-						<p id="contact-copy">Place your order for Great Mark Western Premium Reserve Angus Beef today by filling out this form</p>
+						<p id="contact-copy">Place your order for Great Mark Western Premium Reserve Angus Beef today by filling out this form.</p>
 						
 						<form method="post" action="mailer.php">
 				        <div class="contact-form">
@@ -90,7 +91,7 @@
 						
 					</div>
 					<p class="contact-info">phone: 248.414.1700</p>
-					<p class="contact-info">email: info@GreatMarkWestern.com</p>
+					<p class="contact-info">email: gmwinfo@continentalserv.com</p>
 				</article>
 				</section>
 			</li>
@@ -114,10 +115,8 @@
 		});
 	</script>
 
-
 	<script type="text/javascript">
 	    $(document).ready(function(){
-	    	$(window).stellar();
 	    	document.getElementById('activelink').focus();
 	    });
 	 

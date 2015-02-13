@@ -15,14 +15,14 @@ $(function() {
 
     function open() {
         $(items).removeClass('close').addClass('open');
-        $('body').addClass('prevent-x-scrolling');
-        $('html').addClass('prevent-x-scrolling');
+        //$('body').addClass('prevent-x-scrolling');
+        //$('html').addClass('prevent-x-scrolling');
     }
 
     function close() {
         $(items).removeClass('open').addClass('close');
-        $('body').removeClass('prevent-x-scrolling');
-        $('html').removeClass('prevent-x-scrolling');
+        //$('body').removeClass('prevent-x-scrolling');
+        //$('html').removeClass('prevent-x-scrolling');
     }
 
     $('#navToggle').on(clickevent, function(event) {

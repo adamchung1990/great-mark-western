@@ -33,7 +33,7 @@
 
 </head> 
  
-<body> 
+<body ontouchstart=""> 
 
 <div class="container">
 
@@ -63,7 +63,7 @@
 				<section class="main-copy" >
 					<article>
 					<img id="cowboy-icon" src="images/cowboy-icon.png"/>
-					<p> Raising high quality beef is an <span id="copy-highlight">art form</span> at Great Mark Western…one that is <span id="copy-highlight">curated</span> with the expertise of the cattle industry’s <span id="copy-highlight">most renowned geneticists, farmers and ranchers.</span> GMW’s expert ranchers achieve <span id="copy-highlight">fork-tender, perfectly marbled</span> beef of exceptional quality in each harvest.” 
+					<p> Raising high quality beef is an <span id="copy-highlight">art form</span> at Great Mark Western…one that is <span id="copy-highlight">curated</span> with the expertise of the cattle industry’s <span id="copy-highlight">most renowned geneticists, farmers and ranchers.</span> GMW’s expert ranchers achieve <span id="copy-highlight">fork-tender, perfectly marbled</span> beef of exceptional quality in each harvest.
 					</p>
 					<img id="stars-icon" src="images/stars.png"/>
 					</article>
@@ -90,7 +90,7 @@
 				GMW ranchers go the extra mile, <span id="copy-highlight">nurturing reputation cattle in ideal environments</span> with specialized care and feeding that <span id="copy-highlight">naturally enhances</span> each animal’s development potential, all while painstakingly adhering to <span id="copy-highlight">GMW quality, detail and safety standards.</span>
 				</p>
 				<p>
-				It’s this <span id="copy-highlight">proven cattle-care regimen</span>, augmented with a high-energy corn finishing diet that results in <span id="copy-highlight">fork-tender, perfectly marbled beef</span> with an enhanced flavor profile.” 
+				It’s this <span id="copy-highlight">proven cattle-care regimen</span>, augmented with a high-energy corn finishing diet that results in <span id="copy-highlight">fork-tender, perfectly marbled beef</span> with an enhanced flavor profile.
 				</p>
 				<img id="stars-icon" src="images/stars.png"/>
 			</li>
@@ -116,8 +116,37 @@
 
 
 	<script type="text/javascript">
+
+		var isMobile = {
+	    Android: function() {
+	        return navigator.userAgent.match(/Android/i);
+	    },
+	    BlackBerry: function() {
+	        return navigator.userAgent.match(/BlackBerry/i);
+	    },
+	    iOS: function() {
+	        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+	    },
+	    Opera: function() {
+	        return navigator.userAgent.match(/Opera Mini/i);
+	    },
+	    Windows: function() {
+	        return navigator.userAgent.match(/IEMobile/i);
+	    },
+	    any: function() {
+	        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+	    }
+	};
+	jQuery(document).ready(function(){
+	    if( !isMobile.any() ){
+	        $(window).stellar();
+	    }
+	});
+	 
+	</script>
+
+	<script type="text/javascript">
 	    $(document).ready(function(){
-	    	$(window).stellar();
 	    	document.getElementById('activelink').focus();
 	    });
 	 
