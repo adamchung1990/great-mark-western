@@ -110,7 +110,7 @@
 						
 					</div>
 					<p class="contact-info">phone: 248.414.1700</p>
-					<p class="contact-info">email: gmwinfo@continentalserv.com</p>
+					<p class="contact-info">email: info@greatmarkwestern.com</p>
 				</article>
 				</section>
 			</li>

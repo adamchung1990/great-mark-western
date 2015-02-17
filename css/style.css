@@ -5,6 +5,11 @@ html, body {
     
 }
 
+.prevent-scrolling {
+	max-width:100%;
+	overflow: hidden; 
+}
+
 body {
 	background-color: black;
 	
@@ -426,7 +431,7 @@ nav li a {
 
 #USDA-icon {height:130px;}
 
-.hide {opacity:0;}
+
 
 
 
@@ -449,6 +454,8 @@ nav li a {
 	#contact-image {background-size: 100%;}
 	#contact-intro {width: 403px;font-size: 15px;}
 	.contact-box p {font-size: 15px;}
+
+	.hide {opacity:0;}
 }
 
 
